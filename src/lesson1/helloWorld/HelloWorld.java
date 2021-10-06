@@ -14,5 +14,8 @@ public class HelloWorld {
 
         theWorld.setPlanetName("Mars");
         System.out.println("But now i decided to go to " + theWorld.getPlanetName());
+
+        LocalLibrary localLibrary = new LocalLibrary();
+        System.out.println("I will use schema " + localLibrary.getSchematics());
     }
 }
