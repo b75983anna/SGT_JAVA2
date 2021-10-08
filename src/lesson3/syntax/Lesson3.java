@@ -5,7 +5,10 @@ import lesson1.helloWorldLibrary.WorldLibrary;
 
 
 public class Lesson3 {
-    String SOME_CONSTANT = "constant";
+    final String SOME_CONSTANT = "constant";
+//    SOME_CONSTANT = "cannot override it";
+    final float PI = 3.14f;
+
     public static void main(String[] args) {
 
         RocketShip ship = new RocketShip();
@@ -31,6 +34,14 @@ public class Lesson3 {
         result += 5;
 
         System.out.println("Result = " + result);
+
+
+//        I want to print my name here, using Static s class
+        Statics statics = new Statics("not Artjoms");
+
+        System.out.println("name:" + statics.getName());
+
+        System.out.println("Surname: " + Statics.getSurname());
 
     }
 
