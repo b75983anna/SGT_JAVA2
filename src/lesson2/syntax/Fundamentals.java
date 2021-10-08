@@ -22,6 +22,7 @@ public class Fundamentals {
         Line 3
         ...
          */
+        anotherMethod(true);
     }
 
     /**
@@ -33,6 +34,15 @@ public class Fundamentals {
      */
     public String someMethod(String param1, int param2) {
         return "something";
+    }
+
+    /**
+     * anotherMethod is intended to do something else
+     * @param param1 - tihs one i sdefinitely required
+     * @return - returns hardcoded value
+     */
+    public static String anotherMethod(boolean param1) {
+        return "Hardcoded value";
     }
 
     /*-
