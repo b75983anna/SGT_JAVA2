@@ -6,12 +6,13 @@ package lv.artjoms.rocketscience;
  */
 public class Rocket {
 
-    private String name;
+    private String name = "Initial name";
     private String color;
     private int weight;
     private int height;
     private Engine engine;
     private static int rocketCounter;
+    public String id;
 
     public Rocket() {
         addRocket();
@@ -26,6 +27,10 @@ public class Rocket {
      * @param engine
      */
     public Rocket(String name, String color, int weight, int height, Engine engine) {
+
+        System.out.println("Original: " + this.name);
+        System.out.println("New name: " + name);
+
         this.name = name;
         this.color = color;
         this.weight = weight;
@@ -34,6 +39,19 @@ public class Rocket {
         addRocket();
     }
 
+    public void printRocketData() {
+        System.out.println("Rocket{" +
+                "  " + this.name + ", " +
+                "  " + this.color + ", " +
+                "  " + this.height + ", " +
+                "  " + this.weight + ", " +
+                "}");
+    }
+
+    @Override
+    protected void finalize() {
+        System.out.println("The rocket" + this.name + " has been destroyed");
+    }
 
     static int countRockets() {
         return rocketCounter;
