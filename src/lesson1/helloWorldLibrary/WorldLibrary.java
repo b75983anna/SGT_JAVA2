@@ -13,6 +13,6 @@ public class WorldLibrary {
     }
 
     public static String getName() {
-        return "Artjoms";
+        return "Anna";
     }
 }

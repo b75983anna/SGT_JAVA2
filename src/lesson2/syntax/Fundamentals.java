@@ -38,7 +38,7 @@ public class Fundamentals {
 
     /**
      * anotherMethod is intended to do something else
-     * @param param1 - tihs one i sdefinitely required
+     * @param param1 - this one is definitely required
      * @return - returns hardcoded value
      */
     public static String anotherMethod(boolean param1) {

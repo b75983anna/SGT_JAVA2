@@ -12,8 +12,8 @@ public class Statics {
     public Statics() {
     }
 
-    private String name = "Artjoms";
-    private static String surname = "petrovs";
+    private String name = "Anna";
+    private static String surname = "Borne";
 
 
     public String getName() {
